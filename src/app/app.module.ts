@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { GaleriaModule } from "./galeria/galeria.module";
 import { ImpresorasModule } from "./impresoras/impresoras.module";
 import { ComputadorasModule } from "./computadoras/computadoras.module";
-import { NabvarprincipalModule } from "./nabvarprincipal/nabvarprincipal.module";
+import { NavbarprincipalModule } from "./navbarprincipal/navbarprincipal.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { NabvarprincipalModule } from "./nabvarprincipal/nabvarprincipal.module"
     GaleriaModule,
     ImpresorasModule,
     ComputadorasModule,
-    NabvarprincipalModule
+    NavbarprincipalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
