@@ -8,6 +8,7 @@ import { ImpresorasComponent } from './impresoras/impresoras-component/impresora
 import { RouterModule } from "@angular/router";
 import { ImpresorasModule } from "./impresoras/impresoras.module";
 import { ComputadorasModule } from "./computadoras/computadoras.module";
+import {NabvarprincipalModule} from "./nabvarprincipal/nabvarprincipal.module";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ComputadorasModule } from "./computadoras/computadoras.module";
     GaleriaModule,
     ImpresorasModule,
     ComputadorasModule,
+    NabvarprincipalModule,
     RouterModule.forRoot([
       {path: 'computadoras', component: ComputadorasComponent},
       {path: 'impresoras', component: ImpresorasComponent}
