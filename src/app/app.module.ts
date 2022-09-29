@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GaleriaModule } from "./galeria/galeria.module";
+import { ComputadorasComponent } from './computadoras/computadoras-component/computadoras.component';
+import { ImpresorasComponent } from './impresoras/impresoras-component/impresoras.component';
+import { RouterModule } from "@angular/router";
+import { ImpresorasModule } from "./impresoras/impresoras.module";
+import { ComputadorasModule } from "./computadoras/computadoras.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    GaleriaModule,
+    ImpresorasModule,
+    ComputadorasModule,
+    RouterModule.forRoot([
+      {path: 'computadoras', component: ComputadorasComponent},
+      {path: 'impresoras', component: ImpresorasComponent}
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
