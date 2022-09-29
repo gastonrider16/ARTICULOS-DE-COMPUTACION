@@ -3,12 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { GaleriaModule } from "./galeria/galeria.module";
-import { ComputadorasComponent } from './computadoras/computadoras-component/computadoras.component';
-import { ImpresorasComponent } from './impresoras/impresoras-component/impresoras.component';
-import { RouterModule } from "@angular/router";
 import { ImpresorasModule } from "./impresoras/impresoras.module";
 import { ComputadorasModule } from "./computadoras/computadoras.module";
-import {NabvarprincipalModule} from "./nabvarprincipal/nabvarprincipal.module";
+import { NabvarprincipalModule } from "./nabvarprincipal/nabvarprincipal.module";
 
 @NgModule({
   declarations: [
@@ -19,11 +16,7 @@ import {NabvarprincipalModule} from "./nabvarprincipal/nabvarprincipal.module";
     GaleriaModule,
     ImpresorasModule,
     ComputadorasModule,
-    NabvarprincipalModule,
-    RouterModule.forRoot([
-      {path: 'computadoras', component: ComputadorasComponent},
-      {path: 'impresoras', component: ImpresorasComponent}
-    ]),
+    NabvarprincipalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

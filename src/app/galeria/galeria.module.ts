@@ -4,9 +4,6 @@ import { GaleriaComponent } from '../galeria/galeria-component/galeria.component
 
 @NgModule({
   declarations: [GaleriaComponent],
-  exports: [
-    GaleriaComponent
-  ],
   imports: [
     CommonModule
   ]

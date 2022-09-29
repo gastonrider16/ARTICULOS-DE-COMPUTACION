@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NabvarprincipalComponent } from "../nabvarprincipal/nabvarprincipal/nabvarprincipal.component";
+import { ImpresorasComponent } from "./impresoras-component/impresoras.component";
 
 @NgModule({
-  declarations: [NabvarprincipalComponent],
+  declarations: [ ImpresorasComponent],
   imports: [
     CommonModule
   ]
